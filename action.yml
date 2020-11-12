@@ -1,0 +1,18 @@
+name: 'Get current pom version'
+description: 'Get the current version of the pom package'
+branding:
+  color: 'gray-dark'
+  icon: 'align-center'
+inputs:
+  path:
+    required: false
+    default: '.'
+    description: 'Path to pom.xml file (directories only), e.g. mavenproject/<yourproject>'
+outputs:
+  version:
+    description: 'Current version defined in the pom.xml file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
