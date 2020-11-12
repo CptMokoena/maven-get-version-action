@@ -18,8 +18,8 @@ If you are using a monorepo or otherwise have some packages in a subdirectory of
 ```yaml
 - name: get-pom-version
   id: pom-version
-  uses: cptmokoena/maven-get-version-action@master
+  uses: CptMokoena/maven-get-version-action@master
   with:
     path: mavenproject/<yourproject>
-```ø
+```
 
